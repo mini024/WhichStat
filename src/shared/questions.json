@@ -1,0 +1,264 @@
+{
+    "id" : "Questions",
+    "questionTree" :
+        {
+            "id" : 1,
+            "Title" : "Are all the variables numeric?",
+            "AnswerType" : "Bool",
+            "Description" : "Extra Info goes here",
+            "Yes" : {
+                "id" : 11,
+                "Title" : "Is the value of p <= 0.5? (Non-Parametric)",
+                "AnswerType" : "Bool",
+                "Description" : "Yes - Non Parametric , No - Parametric",
+                "Yes" : {
+                    "id" : 111,
+                    "Title" : "Are you comparing groups?",
+                    "AnswerType" : "Bool",
+                    "Description" : "",
+                    "Yes" : {
+                        "id" : 1111,
+                        "Title" : "Are you comparing independent groups?",
+                        "AnswerType" : "Bool",
+                        "Description" : "",
+                        "Yes" : {
+                            "id" : 11111,
+                            "Title" : "Are you comparing more than 2 groups?",
+                            "AnswerType" : "Bool",
+                            "Description" : "",
+                            "Yes" : {
+                                "id" : -1,
+                                "Title" : "Kruskal Walls",
+                                "AnswerType" : "Result",
+                                "Description" : "",
+                                "Yes" : {},
+                                "No" : {}
+                            },
+                            "No" : {
+                                "id" : -1,
+                                "Title" : "U-Mann Whitney",
+                                "AnswerType" : "Result",
+                                "Description" : "",
+                                "Yes" : {},
+                                "No" : {}
+                            }
+                        },
+                        "No" : {
+                            "id" : 11110,
+                            "Title" : "Are you comparing more than 2 mesures?",
+                            "AnswerType" : "Bool",
+                            "Description" : "",
+                            "Yes" : {
+                                "id" : -1,
+                                "Title" : "Friedman",
+                                "AnswerType" : "Result",
+                                "Description" : "",
+                                "Yes" : {},
+                                "No" : {}
+                            },
+                            "No" : {
+                                "id" : -1,
+                                "Title" : "Wilcoxon",
+                                "AnswerType" : "Result",
+                                "Description" : "",
+                                "Yes" : {},
+                                "No" : {}
+                            }
+                        }
+                    },
+                    "No" : {
+                        "id" : 1110,
+                            "Title" : "Are you seeking correlation?",
+                            "AnswerType" : "Bool",
+                            "Description" : "",
+                            "Yes" : {
+                                "id" : -1,
+                                "Title" : "Spearman correlation",
+                                "AnswerType" : "Result",
+                                "Description" : "",
+                                "Yes" : {},
+                                "No" : {}
+                            },
+                            "No" : {
+                                "id" : -1,
+                                "Title" : "** Coefficient correlation intraclass (Seeking concordance) **",
+                                "AnswerType" : "Result",
+                                "Description" : "",
+                                "Yes" : {},
+                                "No" : {}
+                            }
+                    }
+                },
+                "No" : {
+                    "id" : 110,
+                    "Title" : "Are you comparing groups?",
+                    "AnswerType" : "Bool",
+                    "Description" : "",
+                    "Yes" : {
+                        "id" : 1101,
+                        "Title" : "Are you comparing independent groups?",
+                        "AnswerType" : "Bool",
+                        "Description" : "",
+                        "Yes" : {
+                            "id" : 11011,
+                            "Title" : "Are you comparing more than 2 groups?",
+                            "AnswerType" : "Bool",
+                            "Description" : "",
+                            "Yes" : {
+                                "id" : -1,
+                                "Title" : "One-Factor ANOVA ",
+                                "AnswerType" : "Result",
+                                "Description" : "",
+                                "Yes" : {},
+                                "No" : {}
+                            },
+                            "No" : {
+                                "id" : -1,
+                                "Title" : "T student (Independent groups)",
+                                "AnswerType" : "Result",
+                                "Description" : "",
+                                "Yes" : {},
+                                "No" : {}
+                            }
+                        },
+                        "No" : {
+                            "id" : 11010,
+                            "Title" : "Are you comparing more than 2 mesures?",
+                            "AnswerType" : "Bool",
+                            "Description" : "",
+                            "Yes" : {
+                                "id" : -1,
+                                "Title" : "Repeated measures ANOVA",
+                                "AnswerType" : "Result",
+                                "Description" : "",
+                                "Yes" : {},
+                                "No" : {}
+                            },
+                            "No" : {
+                                "id" : -1,
+                                "Title" : "T student (Dependent groups)",
+                                "AnswerType" : "Result",
+                                "Description" : "",
+                                "Yes" : {},
+                                "No" : {}
+                            }
+                        }
+                    },
+                    "No" : {
+                        "id" : 1100,
+                        "Title" : "Are you seeking correlation?",
+                        "AnswerType" : "Bool",
+                        "Description" : "",
+                        "Yes" : {
+                            "id" : -1,
+                            "Title" : "Pearson correlation",
+                            "AnswerType" : "Result",
+                            "Description" : "",
+                            "Yes" : {},
+                            "No" : {}
+                        },
+                        "No" : {
+                            "id" : -1,
+                            "Title" : "Coefficient correlation intraclass (Seeking concordance)  ",
+                            "AnswerType" : "Result",
+                            "Description" : "",
+                            "Yes" : {},
+                            "No" : {}
+                        }
+                    }
+                }
+            },
+            "No" : {
+                "id" : 10,
+                "Title" : "Do you want to analyze numeric and categoric variables?",
+                "AnswerType" : "Bool",
+                "Description" : "Extra Info goes here",
+                "Yes" : {
+                    "id" : -1,
+                    "Title" : "Spearman correlation",
+                    "AnswerType" : "Result",
+                    "Description" : "",
+                    "Yes" : {},
+                    "No" : {}
+                },
+                "No" : {
+                    "id" : 100,
+                    "Title" : "Are you comparing groups?",
+                    "AnswerType" : "Bool",
+                    "Description" : "",
+                    "Yes" : {
+                        "id" : 1001,
+                        "Title" : "Are you comparing independent groups?",
+                        "AnswerType" : "Bool",
+                        "Description" : "",
+                        "Yes" : {
+                            "id" : 10011,
+                            "Title" : "Are you comparing more than 2 groups?",
+                            "AnswerType" : "Bool",
+                            "Description" : "",
+                            "Yes" : {
+                                "id" : -1,
+                                "Title" : "Fisher's Test or Chi squared Test",
+                                "AnswerType" : "Result",
+                                "Description" : "",
+                                "Yes" : {},
+                                "No" : {}
+                            },
+                            "No" : {
+                                "id" : -1,
+                                "Title" : "Chi squared Test",
+                                "AnswerType" : "Result",
+                                "Description" : "",
+                                "Yes" : {},
+                                "No" : {}
+                            }
+                        },
+                        "No" : {
+                            "id" : 10010,
+                            "Title" : "Are you comparing more than 2 groups?",
+                            "AnswerType" : "Bool",
+                            "Description" : "",
+                            "Yes" : {
+                                "id" : -1,
+                                "Title" : "Cochran Q Test",
+                                "AnswerType" : "Result",
+                                "Description" : "",
+                                "Yes" : {},
+                                "No" : {}
+                            },
+                            "No" : {
+                                "id" : -1,
+                                "Title" : "McNemar Test",
+                                "AnswerType" : "Result",
+                                "Description" : "",
+                                "Yes" : {},
+                                "No" : {}
+                            }
+                        }
+                    },
+                    "No" : {
+                        "id" : 1000,
+                        "Title" : "More than 2 mesures",
+                        "AnswerType" : "Bool",
+                        "Description" : "",
+                        "Yes" : {
+                            "id" : -1,
+                            "Title" : "Weighted Kappa",
+                            "AnswerType" : "Result",
+                            "Description" : "",
+                            "Yes" : {},
+                            "No" : {}
+                        },
+                        "No" : {
+                            "id" : -1,
+                            "Title" : "Kappa",
+                            "AnswerType" : "Result",
+                            "Description" : "",
+                            "Yes" : {},
+                            "No" : {}
+                        }
+                    }
+                }
+            }
+        }
+}

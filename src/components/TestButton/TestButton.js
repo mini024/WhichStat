@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import Questionarie from '../Questionarie/Questionarie';
 // Material UI
-import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 
 class TestButton extends Component {
@@ -16,19 +16,20 @@ class TestButton extends Component {
 
   handleClick () {
     this.setState({isAnswering:!this.isAnswering});
+    //Questions should appear
   }
 
   render() {
     const {isAnswering}  = this.state;
-    const { classes } = this.props;
     
     return (
       <div>
         { !isAnswering ? (
           <div className="TestButton">
+            <h1>WhichStat</h1>
             <h3>Start to know which statistical test to use</h3>
             <Button variant="contained" id="WhiteButton" onClick={this.handleClick}> Start </Button>
-          </div>) : <div></div>
+          </div>) : <Questionarie />
         }
       </div>
     )
