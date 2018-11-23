@@ -12,11 +12,15 @@ class TestButton extends Component {
     }
     
     this.handleClick = this.handleClick.bind(this);
+    this.handleReload = this.handleReload.bind(this);
   }
 
   handleClick () {
     this.setState({isAnswering:!this.isAnswering});
-    //Questions should appear
+  }
+
+  handleReload () {
+    this.setState({isAnswering:false});
   }
 
   render() {
@@ -25,11 +29,14 @@ class TestButton extends Component {
     return (
       <div>
         { !isAnswering ? (
-          <div className="TestButton">
+          <div class="MainContent">
             <h1>WhichStat</h1>
             <h3>Start to know which statistical test to use</h3>
             <Button variant="contained" id="WhiteButton" onClick={this.handleClick}> Start </Button>
-          </div>) : <Questionarie />
+          </div>) : (<div>
+            <Questionarie />
+            <Button variant="contained" id="WhiteButton-bottom" onClick={this.handleReload}>Restart</Button>
+            </div>)
         }
       </div>
     )

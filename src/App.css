@@ -32,27 +32,51 @@
 }
 
 :root {
-  background-color: rgb(215, 94, 84);
+  background-color: rgb(23, 68, 159);
   color: #e4e7ec;
 }
 
 .Header {
   text-align: center;
-  padding-top: 18%;
+  height: 100%;
+  width: 100%
+}
+
+.MainContent {
+  padding-top: 20%;
 }
 
 #WhiteButton {
   background-color:#e4e7ec;
-  color:  rgb(215, 94, 84);
+  color:  rgb(23, 68, 159);
 }
 
 #WhiteButton-left {
   background-color:#e4e7ec;
-  color:  rgb(215, 94, 84);
+  color:  rgb(23, 68, 159);
   margin-left: 1%;
+}
+
+#WhiteButton-bottom {
+  background-color:#e4e7ec;
+  color:  rgb(23, 68, 159);
+  margin-top: 1%;
 }
 
 #AnswerButtons {
   text-align: center;
 }
 
+#ResultCard {
+  text-align: center;
+  background-color:#e4e7ec;
+  color:  rgb(23, 68, 159);
+  margin: 3%;
+  border-radius: 20px;
+  display: block;
+  overflow: auto;
+}
+
+#Description {
+  color: #3d3e3f;
+}

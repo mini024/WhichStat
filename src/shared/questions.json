@@ -75,7 +75,7 @@
                                 "id" : -1,
                                 "Title" : "Spearman correlation",
                                 "AnswerType" : "Result",
-                                "Description" : "",
+                                "Description" : "You need two variables that are either ordinal, interval or ratio (see our Types of Variable guide if you need clarification). Although you would normally hope to use a Pearson product-moment correlation on interval or ratio data, the Spearman correlation can be used when the assumptions of the Pearson correlation are markedly violated. However, Spearman's correlation determines the strength and direction of the monotonic relationship between your two variables rather than the strength and direction of the linear relationship between your two variables, which is what Pearson's correlation determines.",
                                 "Yes" : {},
                                 "No" : {}
                             },
@@ -177,7 +177,7 @@
                     "id" : -1,
                     "Title" : "Spearman correlation",
                     "AnswerType" : "Result",
-                    "Description" : "",
+                    "Description" : "You need two variables that are either ordinal, interval or ratio (see our Types of Variable guide if you need clarification). Although you would normally hope to use a Pearson product-moment correlation on interval or ratio data, the Spearman correlation can be used when the assumptions of the Pearson correlation are markedly violated. However, Spearman's correlation determines the strength and direction of the monotonic relationship between your two variables rather than the strength and direction of the linear relationship between your two variables, which is what Pearson's correlation determines.",
                     "Yes" : {},
                     "No" : {}
                 },

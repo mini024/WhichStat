@@ -19,7 +19,7 @@ export default class Questionarie extends Component {
   handleClickYes() {
     const {currentQuestion, questionId} = this.state
     var nextQuestion = currentQuestion.Yes;
-    if (nextQuestion.id == -1) {
+    if (nextQuestion.id === -1) {
       this.setState({currentQuestion:currentQuestion.Yes, result: true})
     } else {
       this.setState({currentQuestion:currentQuestion.Yes, questionId:questionId*10+1})
@@ -29,7 +29,7 @@ export default class Questionarie extends Component {
   handleClickNo() {
     const {currentQuestion, questionId} = this.state
     var nextQuestion = currentQuestion.No;
-    if (nextQuestion.id == -1) {
+    if (nextQuestion.id === -1) {
       this.setState({currentQuestion:currentQuestion.No, result: true})
     } else {
       this.setState({currentQuestion:currentQuestion.No, questionId:questionId*10})
@@ -44,40 +44,28 @@ export default class Questionarie extends Component {
   render() {
     const {currentQuestion, result} = this.state
     return (
-      <div className="questionarie">
-        {currentQuestion == null ? (<p>Hello</p>) : 
-          <div>
-            <h3>{currentQuestion.Title}</h3>
-            <p>{currentQuestion.Description}</p>
-            {!result ? (
-            <div id="AnswerButtons">
-            <Button variant="contained" id="WhiteButton" onClick={this.handleClickYes}>Yes</Button>
-            <Button variant="contained" id="WhiteButton-left" onClick={this.handleClickNo}>No</Button> 
-            </div>)
-            : <div></div>
-            }
-          </div>
-        }
-        
-        
+      <div class="MainContent">
+        {currentQuestion != null ?
+          (!result ? 
+            (
+            <div>
+              <h3>{currentQuestion.Title}</h3>
+              <p>{currentQuestion.Description}</p>
+              <div id="AnswerButtons">
+                <Button variant="contained" id="WhiteButton" onClick={this.handleClickYes}>Yes</Button>
+                <Button variant="contained" id="WhiteButton-left" onClick={this.handleClickNo}>No</Button> 
+              </div>
+            </div>
+            ) : (
+            <div id="ResultCard">
+              <h3>{currentQuestion.Title}</h3>
+              {console.log(currentQuestion)}
+              <p id="Description">{currentQuestion.Description}</p>
+            </div>
+            )
+          ) : <div> Error Questions not Found </div>
+      }
       </div>
     )
   }
 }
-
-// class Questions {
-//   constructor() {
-//     this.root = null;
-//   }
-// }
-
-// class Question {
-//   constructor(id, title, type, description, yes, no) {
-//     this.id = id
-//     this.Title = title
-//     this.description = description
-//     this.type = type
-//     this.yes = null
-//     this.no = null
-//   }
-// }
