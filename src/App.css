@@ -38,11 +38,21 @@
 
 .Header {
   text-align: center;
-  padding-top: 18%
+  padding-top: 18%;
 }
 
 #WhiteButton {
   background-color:#e4e7ec;
   color:  rgb(215, 94, 84);
+}
+
+#WhiteButton-left {
+  background-color:#e4e7ec;
+  color:  rgb(215, 94, 84);
+  margin-left: 1%;
+}
+
+#AnswerButtons {
+  text-align: center;
 }
 

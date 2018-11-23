@@ -50,9 +50,9 @@ export default class Questionarie extends Component {
             <h3>{currentQuestion.Title}</h3>
             <p>{currentQuestion.Description}</p>
             {!result ? (
-            <div>
+            <div id="AnswerButtons">
             <Button variant="contained" id="WhiteButton" onClick={this.handleClickYes}>Yes</Button>
-            <Button variant="contained" id="WhiteButton" onClick={this.handleClickNo}>No</Button> 
+            <Button variant="contained" id="WhiteButton-left" onClick={this.handleClickNo}>No</Button> 
             </div>)
             : <div></div>
             }
