@@ -30,17 +30,15 @@
                                 "id" : -1,
                                 "Title" : "Kruskal Walls",
                                 "AnswerType" : "Result",
-                                "Description" : "",
-                                "Yes" : {},
-                                "No" : {}
+                                "Description" : "It is a test used to compare 3 or more independent groups, their measures must be numerical and non-parametric. It´s parametric counterpart is the One-Factor ANOVA.",
+                                "Links": []
                             },
                             "No" : {
                                 "id" : -1,
                                 "Title" : "U-Mann Whitney",
                                 "AnswerType" : "Result",
-                                "Description" : "",
-                                "Yes" : {},
-                                "No" : {}
+                                "Description" : "It is a test used to compare 2 groups with different measures and analyze if it´s averages are significantly different between each other. It must be used ins nonparametric numerical Variables. It´s parametric counterpart is the T-student test.",
+                                "Links": []
                             }
                         },
                         "No" : {
@@ -52,17 +50,15 @@
                                 "id" : -1,
                                 "Title" : "Friedman",
                                 "AnswerType" : "Result",
-                                "Description" : "",
-                                "Yes" : {},
-                                "No" : {}
+                                "Description" : "It is a test used to compare 1 group, with 3 or more measures that must be numerical and non-parametric. It´s parametric test is the Repeated measured",
+                                "Links": []
                             },
                             "No" : {
                                 "id" : -1,
                                 "Title" : "Wilcoxon",
                                 "AnswerType" : "Result",
-                                "Description" : "",
-                                "Yes" : {},
-                                "No" : {}
+                                "Description" : "It is a test used when you compare the measures of the same group 2 times and its measures are parametric, continous variables. It´s parametric counterpart is the T-test paired dependent groups.",
+                                "Links": []
                             }
                         }
                     },
@@ -75,17 +71,15 @@
                                 "id" : -1,
                                 "Title" : "Spearman correlation",
                                 "AnswerType" : "Result",
-                                "Description" : "You need two variables that are either ordinal, interval or ratio (see our Types of Variable guide if you need clarification). Although you would normally hope to use a Pearson product-moment correlation on interval or ratio data, the Spearman correlation can be used when the assumptions of the Pearson correlation are markedly violated. However, Spearman's correlation determines the strength and direction of the monotonic relationship between your two variables rather than the strength and direction of the linear relationship between your two variables, which is what Pearson's correlation determines.",
-                                "Yes" : {},
-                                "No" : {}
+                                "Description" : "It is a test that measures the statistical relationship, or association between 2 nonparametric variables. It does not explains cause and effect, only the amount of association existing between the 2 variables. It´s parametric counterpart is the Pearson correlation.",
+                                "Links": []
                             },
                             "No" : {
                                 "id" : -1,
-                                "Title" : "** Coefficient correlation intraclass (Seeking concordance) **",
+                                "Title" : "Intraclass correlation coefficient",
                                 "AnswerType" : "Result",
-                                "Description" : "",
-                                "Yes" : {},
-                                "No" : {}
+                                "Description" : "The intraclass correlation coefficient is a reliability index in test, re-test, intrarater, and interrater reliability analyses. Used when it is intended to observe the degree of agreement between measures. It must be used with continous variables.",
+                                "Links": []
                             }
                     }
                 },
@@ -108,17 +102,15 @@
                                 "id" : -1,
                                 "Title" : "One-Factor ANOVA ",
                                 "AnswerType" : "Result",
-                                "Description" : "",
-                                "Yes" : {},
-                                "No" : {}
+                                "Description" : "It is a test used to compare 3 or more independent groups, their measures must be continous and parametric. It´s non parametric counterpart is the Kruskall-Wallis Test.",
+                                "Links": []
                             },
                             "No" : {
                                 "id" : -1,
                                 "Title" : "T student (Independent groups)",
                                 "AnswerType" : "Result",
-                                "Description" : "",
-                                "Yes" : {},
-                                "No" : {}
+                                "Description" : "It is a test used to compare 2 groups with different measures and analyze if it´s averages are significantly different between each other. It must be used in continous parametric Variables. It´s non-parametric counterpart is the U-Mann Whitney test.",
+                                "Links": []
                             }
                         },
                         "No" : {
@@ -130,17 +122,15 @@
                                 "id" : -1,
                                 "Title" : "Repeated measures ANOVA",
                                 "AnswerType" : "Result",
-                                "Description" : "",
-                                "Yes" : {},
-                                "No" : {}
+                                "Description" : "It is a test used to compare 1 group, with 3 or more measures that must be continous and parametric. It´s non parametric test is the Friedman Test.",
+                                "Links": []
                             },
                             "No" : {
                                 "id" : -1,
                                 "Title" : "T student (Dependent groups)",
                                 "AnswerType" : "Result",
-                                "Description" : "",
-                                "Yes" : {},
-                                "No" : {}
+                                "Description" : "It is a test used when you compare the measures of the same group 2 times and its measures are parametric continous variables. It´s non parametric counterpart is the Wilcoxon-ranked Test.",
+                                "Links": []
                             }
                         }
                     },
@@ -153,17 +143,15 @@
                             "id" : -1,
                             "Title" : "Pearson correlation",
                             "AnswerType" : "Result",
-                            "Description" : "",
-                            "Yes" : {},
-                            "No" : {}
+                            "Description" : "The pearson correlation coefficient is a test that measures the statistical relationship, or association between 2 parametric variables. It does not explains cause and effect, only the amount of association existing between the 2 variables. It´s non parametric counterpart is Spearman correlation.",
+                            "Links": []
                         },
                         "No" : {
                             "id" : -1,
                             "Title" : "Coefficient correlation intraclass (Seeking concordance)  ",
                             "AnswerType" : "Result",
-                            "Description" : "",
-                            "Yes" : {},
-                            "No" : {}
+                            "Description" : "The intraclass correlation coefficient is a reliability index in test, re-test, intrarater, and interrater reliability analyses. Used when it is intended to observe the degree of agreement between measures. It must be used with continous variables.",
+                            "Links": []
                         }
                     }
                 }
@@ -177,9 +165,8 @@
                     "id" : -1,
                     "Title" : "Spearman correlation",
                     "AnswerType" : "Result",
-                    "Description" : "You need two variables that are either ordinal, interval or ratio (see our Types of Variable guide if you need clarification). Although you would normally hope to use a Pearson product-moment correlation on interval or ratio data, the Spearman correlation can be used when the assumptions of the Pearson correlation are markedly violated. However, Spearman's correlation determines the strength and direction of the monotonic relationship between your two variables rather than the strength and direction of the linear relationship between your two variables, which is what Pearson's correlation determines.",
-                    "Yes" : {},
-                    "No" : {}
+                    "Description" : "The spearman correlation coefficient is a test that measures the statistical relationship, or association between 2 nonparametric variables. It does not explains cause and effect, only the amount of association existing between the 2 variables. It´s parametric counterpart is the Pearson correlation.",
+                    "Links": []
                 },
                 "No" : {
                     "id" : 100,
@@ -200,17 +187,15 @@
                                 "id" : -1,
                                 "Title" : "Fisher's Test or Chi squared Test",
                                 "AnswerType" : "Result",
-                                "Description" : "",
-                                "Yes" : {},
-                                "No" : {}
+                                "Description" : "It is a test used to compare proportions or percentages (qualitative variables) between 2 groups. When you perform a contingency table with 2 columns and 2 rows it is adequate to select the p value in the Fisher Test row. The Fisher´s exact Test is a statistical significance test that can calculate the significance of the deviation of the null hypothesis exactly, rather than relying on approximation.",
+                                "Links": []
                             },
                             "No" : {
                                 "id" : -1,
                                 "Title" : "Chi squared Test",
                                 "AnswerType" : "Result",
-                                "Description" : "",
-                                "Yes" : {},
-                                "No" : {}
+                                "Description" : "It is a test used to compare proportions or percentages (qualitative variables) between 2 groups.",
+                                "Links": []
                             }
                         },
                         "No" : {
@@ -222,17 +207,15 @@
                                 "id" : -1,
                                 "Title" : "Cochran Q Test",
                                 "AnswerType" : "Result",
-                                "Description" : "",
-                                "Yes" : {},
-                                "No" : {}
+                                "Description" : "Is an extension of the McNemar Test, for related samples that provides a method for testing differences between 3 or more matched sets of frequencies or proportions.",
+                                "Links": []
                             },
                             "No" : {
                                 "id" : -1,
                                 "Title" : "McNemar Test",
                                 "AnswerType" : "Result",
-                                "Description" : "",
-                                "Yes" : {},
-                                "No" : {}
+                                "Description" : "Is a statistical test used on paired nominal data applied to 2 x 2 contingency tables with dichotomous variables for matched pairs of subjects to determine if the frequencies are equal.",
+                                "Links": []
                             }
                         }
                     },
@@ -245,17 +228,15 @@
                             "id" : -1,
                             "Title" : "Weighted Kappa",
                             "AnswerType" : "Result",
-                            "Description" : "",
-                            "Yes" : {},
-                            "No" : {}
+                            "Description" : "Kappa is a test to compare two qualitative methods, a test method against a reference / comparative method to determine accuracy. It can be called Kappa test for inter-rater agreement. A weighted variation is used when you have ordinal answers. It´s numerical quantitative counterpart is the Intraclass correlation coefficient.",
+                            "Links": []
                         },
                         "No" : {
                             "id" : -1,
                             "Title" : "Kappa",
                             "AnswerType" : "Result",
-                            "Description" : "",
-                            "Yes" : {},
-                            "No" : {}
+                            "Description" : "Kappa is a test to compare two qualitative methods, a test method against a reference / comparative method to determine accuracy. It can be called Kappa test for inter-rater agreement. It´s numerical quantitative counterpart is the Intraclass correlation coefficient.",
+                            "Links": []
                         }
                     }
                 }
