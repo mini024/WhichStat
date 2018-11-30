@@ -4,6 +4,8 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import {Link, withRouter} from 'react-router-dom';
+
 
 const styles = {
   root: {
@@ -17,13 +19,14 @@ class Header extends Component {
     
     return (
       <div className={classes.root} style={{width: "100%"}}>
-      <AppBar position="static" color="primary" className="header-bar">
         <Toolbar>
           <Typography variant="h6" color="inherit">
-            WhichStat
+            <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>WhichStat</Link>
           </Typography>
+          <div id="Header-Buttons">
+            <Link to='/' style={{ textDecoration: 'none', color: 'inherit'}}>About</Link>
+          </div>
         </Toolbar>
-      </AppBar>
     </div>
     )
   }

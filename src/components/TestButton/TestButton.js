@@ -33,7 +33,7 @@ class TestButton extends Component {
             <h1>WhichStat</h1>
             <h3>Start to know which statistical test to use</h3>
             <Link to='/questions'>
-              <Button variant="contained" id="WhiteButton" onClick={this.handleClick}> Start </Button>
+              <Button style={{ textDecoration: 'none', color: 'inherit' }} variant="contained" id="WhiteButton" onClick={this.handleClick}> Start </Button>
             </Link>
         </div>
       </div>

@@ -19,7 +19,11 @@ class Main extends Component {
 
         const QuestionarieComponent = (props) => {
             return (
-                <Questionarie />
+                <div>
+                    <Header />
+                    <Questionarie />
+                </div>
+
             );
         }
 
