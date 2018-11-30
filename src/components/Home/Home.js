@@ -4,7 +4,7 @@ import Questionarie from '../Questionarie/Questionarie';
 import Button from '@material-ui/core/Button';
 import {Link, withRouter} from 'react-router-dom';
 
-class TestButton extends Component {
+class Home extends Component {
 
   constructor(props) {
     super(props)
@@ -41,6 +41,6 @@ class TestButton extends Component {
   }
 }
 
-export default TestButton;
+export default Home;
 
 

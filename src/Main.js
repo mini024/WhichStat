@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom'
 
 import Header from './components/Header/Header';
-import TestButton from './components/TestButton/TestButton';
+import TestButton from './components/Home/Home';
 import Questionarie from './components/Questionarie/Questionarie';
 
 class Main extends Component {
