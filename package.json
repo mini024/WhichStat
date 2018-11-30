@@ -5,10 +5,13 @@
   "dependencies": {
     "@material-ui/core": "^3.5.1",
     "axios": "^0.18.0",
+    "create-react-file": "^1.1.23",
     "jsonfile": "^5.0.0",
     "react": "^16.6.3",
     "react-cookie": "^3.0.4",
     "react-dom": "^16.6.3",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1"
   },
   "scripts": {
