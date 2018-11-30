@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
+import {Link, withRouter} from 'react-router-dom';
 
 export default class Questionarie extends Component {
 
@@ -59,12 +60,19 @@ export default class Questionarie extends Component {
             ) : (
             <div id="ResultCard">
               <h3>{currentQuestion.Title}</h3>
-              {console.log(currentQuestion)}
               <p id="Description">{currentQuestion.Description}</p>
+              {currentQuestion.Links[0] != null ? 
+                <div>
+                  <iframe id="videoFrame" width="560" height="315" src={currentQuestion.Links[0]} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div> : <div />
+              }
             </div>
             )
           ) : <div> Error Questions not Found </div>
       }
+      <Link to='/'>
+        <Button variant="contained" id="WhiteButton-bottom"> Restart </Button>
+      </Link>
       </div>
     )
   }

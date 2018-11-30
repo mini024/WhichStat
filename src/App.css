@@ -71,10 +71,16 @@
   text-align: center;
   background-color:#e4e7ec;
   color:  rgb(23, 68, 159);
-  margin: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: -3%;
   border-radius: 20px;
   display: block;
   overflow: auto;
+}
+
+#videoFrame {
+  padding-bottom: 1%;
 }
 
 #Description {
