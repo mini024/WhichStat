@@ -24,8 +24,10 @@ class Header extends Component {
             <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>WhichStat</Link>
           </Typography>
           <div id="Header-Buttons">
-            <Link to='/' style={{ textDecoration: 'none', color: 'inherit'}}>About</Link>
+            <Link to='/about' style={{ textDecoration: 'none', color: 'inherit'}}>About</Link>
+            <Link id="Header-Button" to='/glossary' style={{ textDecoration: 'none', color: 'inherit'}}>Glossary</Link>
           </div>
+          
         </Toolbar>
     </div>
     )

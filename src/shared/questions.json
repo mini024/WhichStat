@@ -5,12 +5,12 @@
             "id" : 1,
             "Title" : "Are all the variables numeric?",
             "AnswerType" : "Bool",
-            "Description" : "Extra Info goes here",
+            "Description" : "",
             "Yes" : {
                 "id" : 11,
                 "Title" : "Is the value of p <= 0.5? (Non-Parametric)",
                 "AnswerType" : "Bool",
-                "Description" : "Yes - Non Parametric , No - Parametric",
+                "Description" : "",
                 "Yes" : {
                     "id" : 111,
                     "Title" : "Are you comparing groups?",
@@ -226,17 +226,17 @@
                         "Description" : "",
                         "Yes" : {
                             "id" : -1,
-                            "Title" : "Weighted Kappa",
+                            "Title" : "Fleiss Kappa",
                             "AnswerType" : "Result",
-                            "Description" : "Kappa is a test to compare two qualitative methods, a test method against a reference / comparative method to determine accuracy. It can be called Kappa test for inter-rater agreement. A weighted variation is used when you have ordinal answers. It´s numerical quantitative counterpart is the Intraclass correlation coefficient.",
+                            "Description" : "Fleiss Kappa is a statistical measure for assessing the reliability of agreement between a fixed number of raters (comparing 3 or more raters). It is recommended when you have a Likert Scale, ordinal data, or nominal data(categorical variables).",
                             "Links": [""]
                         },
                         "No" : {
                             "id" : -1,
-                            "Title" : "Kappa",
+                            "Title" : "Cohen´s Kappa, or Weighted Kappa",
                             "AnswerType" : "Result",
-                            "Description" : "Kappa is a test to compare two qualitative methods, a test method against a reference / comparative method to determine accuracy. It can be called Kappa test for inter-rater agreement. It´s numerical quantitative counterpart is the Intraclass correlation coefficient.",
-                            "Links": [""]
+                            "Description" : "Kappa is a test to compare two qualitative methods (two raters only), a test method against a reference / comparative method to determine accuracy. It can be called Kappa test for inter-rater agreement. A weighted variation is used when you have ordinal answers (example: low, medium, high). It´s numerical quantitative counterpart is the Intraclass correlation coefficient.",
+                            "Links": ["https://www.youtube.com/watch?v=Bo1gVbmWQs8"]
                         }
                     }
                 }

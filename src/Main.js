@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom'
 
 import Header from './components/Header/Header';
-import TestButton from './components/Home/Home';
+import Home from './components/Home/Home';
 import Questionarie from './components/Questionarie/Questionarie';
+import About from './components/About/About';
+import Glossary from './components/Glossary/Glossary';
 
 class Main extends Component {
     constructor(props) {
@@ -13,7 +15,10 @@ class Main extends Component {
     render() {
         const HomeComponent = (props) => {
             return (
-                <TestButton />
+                <div>
+                    <Header />
+                    <Home />
+                </div>
             );
         }
 
@@ -27,12 +32,31 @@ class Main extends Component {
             );
         }
 
+        const AboutComponent = (props) => {
+            return (
+                <div>
+                    <Header />
+                    <About /> 
+                </div>
+            ); 
+        }
+
+        const GlossaryComponent = (props) => {
+            return (
+                <div>
+                    <Header />
+                    <Glossary /> 
+                </div>
+            ); 
+        }
+
         return(
             <div className="main-container">
                 <Switch>
                     <Route exact path='/' component= {HomeComponent} />
                     <Route path='/questions' component= {QuestionarieComponent}/>
-                    <Route path='/About' render= {HomeComponent} />
+                    <Route path='/about' render= {AboutComponent} />
+                    <Route path='/glossary' render= {GlossaryComponent} />
                 </Switch>
             </div>
         );

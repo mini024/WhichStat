@@ -71,9 +71,9 @@ export default class Questionarie extends Component {
             )
           ) : <div> Error Questions not Found </div>
       }
-      <Link to='/'>
+      {/* <Link to='/' style={{ textDecoration: 'none' }}>
         <Button variant="contained" id="WhiteButton-bottom"> Restart </Button>
-      </Link>
+      </Link> */}
       </div>
     )
   }
