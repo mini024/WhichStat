@@ -8,6 +8,7 @@
     "create-react-file": "^1.1.23",
     "jsonfile": "^5.0.0",
     "react": "^16.6.3",
+    "react-bootstrap": "^0.32.4",
     "react-cookie": "^3.0.4",
     "react-dom": "^16.6.3",
     "react-router": "^4.3.1",

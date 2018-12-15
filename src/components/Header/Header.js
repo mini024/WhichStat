@@ -20,7 +20,7 @@ class Header extends Component {
     return (
       <div className={classes.root} style={{width: "100%"}}>
         <Toolbar>
-          <Typography variant="h6" color="inherit">
+          <Typography variant="h4" color="inherit">
             <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>WhichStat</Link>
           </Typography>
           <div id="Header-Buttons">

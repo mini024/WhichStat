@@ -3,243 +3,151 @@
     "questionTree" :
         {
             "id" : 1,
-            "Title" : "Are all the variables numeric?",
-            "AnswerType" : "Bool",
+            "Title" : "Are you comparing",
+            "Options" : ["Same group multiple times", "Different groups"],
             "Description" : "",
-            "Yes" : {
+            "Option1" : {
                 "id" : 11,
-                "Title" : "Is the value of p <= 0.5? (Non-Parametric)",
-                "AnswerType" : "Bool",
+                "Title" : "How many times are you evaluating?",
+                "Options" : ["2", "3 or more"],
                 "Description" : "",
-                "Yes" : {
+                "Option1" : {
                     "id" : 111,
-                    "Title" : "Are you comparing groups?",
-                    "AnswerType" : "Bool",
+                    "Title" : "Are your variables",
+                    "Options" : ["Categorical", "Continous"],
                     "Description" : "",
-                    "Yes" : {
-                        "id" : 1111,
-                        "Title" : "Are you comparing independent groups?",
-                        "AnswerType" : "Bool",
-                        "Description" : "",
-                        "Yes" : {
-                            "id" : 11111,
-                            "Title" : "Are you comparing more than 2 groups?",
-                            "AnswerType" : "Bool",
-                            "Description" : "",
-                            "Yes" : {
-                                "id" : -1,
-                                "Title" : "Kruskal Wallis Test",
-                                "AnswerType" : "Result",
-                                "Description" : "It is a test used to compare 3 or more independent groups, their measures must be numerical and non-parametric. It´s parametric counterpart is the One-Factor ANOVA.",
-                                "Links": ["https://www.youtube.com/embed/GK2PKB_veQc"]
-                            },
-                            "No" : {
-                                "id" : -1,
-                                "Title" : "U-Mann Whitney Test",
-                                "AnswerType" : "Result",
-                                "Description" : "It is a test used to compare 2 groups with different measures and analyze if it´s averages are significantly different between each other. It must be used ins nonparametric numerical Variables. It´s parametric counterpart is the T-student test.",
-                                "Links": ["https://www.youtube.com/embed/njFz4QmgrWU"]
-                            }
-                        },
-                        "No" : {
-                            "id" : 11110,
-                            "Title" : "Are you comparing more than 2 mesures?",
-                            "AnswerType" : "Bool",
-                            "Description" : "",
-                            "Yes" : {
-                                "id" : -1,
-                                "Title" : "Friedman Test",
-                                "AnswerType" : "Result",
-                                "Description" : "It is a test used to compare 1 group, with 3 or more measures that must be numerical and non-parametric. It´s parametric test is the Repeated measured",
-                                "Links": ["https://www.youtube.com/embed/H-oiQ3f4ouM&amp=&t=177s"]
-                            },
-                            "No" : {
-                                "id" : -1,
-                                "Title" : "Wilcoxon Test",
-                                "AnswerType" : "Result",
-                                "Description" : "It is a test used when you compare the measures of the same group 2 times and its measures are parametric, continous variables. It´s parametric counterpart is the T-test paired dependent groups.",
-                                "Links": ["https://www.youtube.com/embed/SoM2QHbpzUI&amp;list=PLrzstxkdbVcnoV-2J6M29Z8tgx_M6TcVD&amp;index=19"]
-                            }
-                        }
-                    },
-                    "No" : {
-                        "id" : 1110,
-                            "Title" : "Are you seeking correlation?",
-                            "AnswerType" : "Bool",
-                            "Description" : "",
-                            "Yes" : {
-                                "id" : -1,
-                                "Title" : "Spearman correlation Test",
-                                "AnswerType" : "Result",
-                                "Description" : "It is a test that measures the statistical relationship, or association between 2 nonparametric variables. It does not explains cause and effect, only the amount of association existing between the 2 variables. It´s parametric counterpart is the Pearson correlation.",
-                                "Links": ["https://www.youtube.com/embed/r_WQe2c-ISU"]
-                            },
-                            "No" : {
-                                "id" : -1,
-                                "Title" : "Intraclass correlation coefficient Test",
-                                "AnswerType" : "Result",
-                                "Description" : "The intraclass correlation coefficient is a reliability index in test, re-test, intrarater, and interrater reliability analyses. Used when it is intended to observe the degree of agreement between measures. It must be used with continous variables.",
-                                "Links": ["https://www.youtube.com/embed/v2d6eyYoh4M&amp;t=351s"]
-                            }
-                    }
-                },
-                "No" : {
-                    "id" : 110,
-                    "Title" : "Are you comparing groups?",
-                    "AnswerType" : "Bool",
-                    "Description" : "",
-                    "Yes" : {
-                        "id" : 1101,
-                        "Title" : "Are you comparing independent groups?",
-                        "AnswerType" : "Bool",
-                        "Description" : "",
-                        "Yes" : {
-                            "id" : 11011,
-                            "Title" : "Are you comparing more than 2 groups?",
-                            "AnswerType" : "Bool",
-                            "Description" : "",
-                            "Yes" : {
-                                "id" : -1,
-                                "Title" : "One-Factor ANOVA Test",
-                                "AnswerType" : "Result",
-                                "Description" : "It is a test used to compare 3 or more independent groups, their measures must be continous and parametric. It´s non parametric counterpart is the Kruskall-Wallis Test.",
-                                "Links": ["https://www.youtube.com/embed/jYn5Jv7Gh4s"]
-                            },
-                            "No" : {
-                                "id" : -1,
-                                "Title" : "T student (Independent groups)",
-                                "AnswerType" : "Result",
-                                "Description" : "It is a test used to compare 2 groups with different measures and analyze if it´s averages are significantly different between each other. It must be used in continous parametric Variables. It´s non-parametric counterpart is the U-Mann Whitney test.",
-                                "Links": ["https://www.youtube.com/embed/Xx5wE92kfHo"]
-                            }
-                        },
-                        "No" : {
-                            "id" : 11010,
-                            "Title" : "Are you comparing more than 2 mesures?",
-                            "AnswerType" : "Bool",
-                            "Description" : "",
-                            "Yes" : {
-                                "id" : -1,
-                                "Title" : "Repeated measures ANOVA Test",
-                                "AnswerType" : "Result",
-                                "Description" : "It is a test used to compare 1 group, with 3 or more measures that must be continous and parametric. It´s non parametric test is the Friedman Test.",
-                                "Links": ["https://www.youtube.com/embed/6T6dvrwDe_U"]
-                            },
-                            "No" : {
-                                "id" : -1,
-                                "Title" : "T student (Dependent groups) Test",
-                                "AnswerType" : "Result",
-                                "Description" : "It is a test used when you compare the measures of the same group 2 times and its measures are parametric continous variables. It´s non parametric counterpart is the Wilcoxon-ranked Test.",
-                                "Links": ["https://www.youtube.com/embed/DzitbJHIBQM"]
-                            }
-                        }
-                    },
-                    "No" : {
-                        "id" : 1100,
-                        "Title" : "Are you seeking correlation?",
-                        "AnswerType" : "Bool",
-                        "Description" : "",
-                        "Yes" : {
-                            "id" : -1,
-                            "Title" : "Pearson correlation Test",
-                            "AnswerType" : "Result",
-                            "Description" : "The pearson correlation coefficient is a test that measures the statistical relationship, or association between 2 parametric variables. It does not explains cause and effect, only the amount of association existing between the 2 variables. It´s non parametric counterpart is Spearman correlation.",
-                            "Links": ["https://www.youtube.com/embed/VOI5IlHfZVE"]
-                        },
-                        "No" : {
-                            "id" : -1,
-                            "Title" : "Coefficient correlation intraclass (Seeking concordance) Test",
-                            "AnswerType" : "Result",
-                            "Description" : "The intraclass correlation coefficient is a reliability index in test, re-test, intrarater, and interrater reliability analyses. Used when it is intended to observe the degree of agreement between measures. It must be used with continous variables.",
-                            "Links": ["https://www.youtube.com/embed/v2d6eyYoh4M&amp;t=316s"]
-                        }
-                    }
-                }
-            },
-            "No" : {
-                "id" : 10,
-                "Title" : "Do you want to analyze numeric and categoric variables?",
-                "AnswerType" : "Bool",
-                "Description" : "Extra Info goes here",
-                "Yes" : {
-                    "id" : -1,
-                    "Title" : "Spearman correlation",
-                    "AnswerType" : "Result",
-                    "Description" : "The spearman correlation coefficient is a test that measures the statistical relationship, or association between 2 nonparametric variables. It does not explains cause and effect, only the amount of association existing between the 2 variables. It´s parametric counterpart is the Pearson correlation.",
-                    "Links": ["https://www.youtube.com/embed/r_WQe2c-ISU"]
-                },
-                "No" : {
-                    "id" : 100,
-                    "Title" : "Are you comparing groups?",
-                    "AnswerType" : "Bool",
-                    "Description" : "",
-                    "Yes" : {
-                        "id" : 1001,
-                        "Title" : "Are you comparing independent groups?",
-                        "AnswerType" : "Bool",
-                        "Description" : "",
-                        "Yes" : {
-                            "id" : 10011,
-                            "Title" : "Are you comparing more than 2 groups?",
-                            "AnswerType" : "Bool",
-                            "Description" : "",
-                            "Yes" : {
-                                "id" : -1,
-                                "Title" : "Fisher's Test or Chi squared Test",
-                                "AnswerType" : "Result",
-                                "Description" : "It is a test used to compare proportions or percentages (qualitative variables) between 2 groups. When you perform a contingency table with 2 columns and 2 rows it is adequate to select the p value in the Fisher Test row. The Fisher´s exact Test is a statistical significance test that can calculate the significance of the deviation of the null hypothesis exactly, rather than relying on approximation.",
-                                "Links": ["https://www.youtube.com/embed/z2MEYHnSNnY&amp;list=PLrzstxkdbVcnoV-2J6M29Z8tgx_M6TcVD&amp;index=10"]
-                            },
-                            "No" : {
-                                "id" : -1,
-                                "Title" : "Chi squared Test",
-                                "AnswerType" : "Result",
-                                "Description" : "It is a test used to compare proportions or percentages (qualitative variables) between 2 groups.",
-                                "Links": ["https://www.youtube.com/embed/wG7uD4fY5R4&amp;index=6&amp;list=PLrzstxkdbVcnoV-2J6M29Z8tgx_M6TcVD"]
-                            }
-                        },
-                        "No" : {
-                            "id" : 10010,
-                            "Title" : "Are you comparing more than 2 groups?",
-                            "AnswerType" : "Bool",
-                            "Description" : "",
-                            "Yes" : {
-                                "id" : -1,
-                                "Title" : "Cochran Q Test",
-                                "AnswerType" : "Result",
-                                "Description" : "Is an extension of the McNemar Test, for related samples that provides a method for testing differences between 3 or more matched sets of frequencies or proportions.",
-                                "Links": ["https://www.youtube.com/embed/td5lZvp07Kg"]
-                            },
-                            "No" : {
-                                "id" : -1,
+                    "Option1" : {
+                        "id" : -1,
+                        "Results" : [
+                            {
                                 "Title" : "McNemar Test",
                                 "AnswerType" : "Result",
                                 "Description" : "Is a statistical test used on paired nominal data applied to 2 x 2 contingency tables with dichotomous variables for matched pairs of subjects to determine if the frequencies are equal.",
                                 "Links": ["https://www.youtube.com/embed/FNSg4R-YzOc&amp=&index=7&amp=&list=PLrzstxkdbVcnoV-2J6M29Z8tgx_M6TcVD"]
                             }
-                        }
+                        ]
                     },
-                    "No" : {
-                        "id" : 1000,
-                        "Title" : "More than 2 grups?",
-                        "AnswerType" : "Bool",
-                        "Description" : "",
-                        "Yes" : {
-                            "id" : -1,
-                            "Title" : "Fleiss Kappa",
-                            "AnswerType" : "Result",
-                            "Description" : "Fleiss Kappa is a statistical measure for assessing the reliability of agreement between a fixed number of raters (comparing 3 or more raters). It is recommended when you have a Likert Scale, ordinal data, or nominal data(categorical variables).",
-                            "Links": [""]
-                        },
-                        "No" : {
-                            "id" : -1,
-                            "Title" : "Cohen´s Kappa, or Weighted Kappa",
-                            "AnswerType" : "Result",
-                            "Description" : "Kappa is a test to compare two qualitative methods (two raters only), a test method against a reference / comparative method to determine accuracy. It can be called Kappa test for inter-rater agreement. A weighted variation is used when you have ordinal answers (example: low, medium, high). It´s numerical quantitative counterpart is the Intraclass correlation coefficient.",
-                            "Links": ["https://www.youtube.com/watch?v=Bo1gVbmWQs8"]
-                        }
+                    "Option2" : {
+                        "id" : -1,
+                        "Results" : [{
+                                "Title" : "Student T Test - related samples",
+                                "AnswerType" : "Result",
+                                "Description" : "It is a test used when you compare the measures of the same group 2 times and its measures are parametric continous variables. It´s non parametric counterpart is the Wilcoxon-ranked Test.",
+                                "Links": ["https://www.youtube.com/embed/DzitbJHIBQM"]},
+                            {
+                                "Title" : "Wilcoxon Test",
+                                "AnswerType" : "Result",
+                                "Description" : "It is a test used when you compare the measures of the same group 2 times and its measures are parametric, continous variables. It´s parametric counterpart is the T-test paired dependent groups.",
+                                "Links": ["https://www.youtube.com/embed/SoM2QHbpzUI&amp;list=PLrzstxkdbVcnoV-2J6M29Z8tgx_M6TcVD&amp;index=19"]
+                            }
+                        ]
+                    }
+                },
+                "Option2" : {
+                    "id" : 110,
+                    "Title" : "Are your variables",
+                    "Options" : ["Categorical", "Continous"],
+                    "Description" : "",
+                    "Option1" : {
+                        "id" : -1,
+                        "Results" : [
+                            {
+                                "Title" : "Friedman",
+                                "AnswerType" : "Result",
+                                "Description" : "It is a test used to compare 1 group, with 3 or more measures that must be numerical and non-parametric. It´s parametric test is the Repeated measured",
+                                "Links": ["https://www.youtube.com/embed/H-oiQ3f4ouM&amp=&t=177s"]
+                            }
+                        ]
+                    },
+                    "Option2" : {
+                        "id" : -1,
+                        "Results" : [
+                            {
+                                "Title" : "Repeated measures ANOVA Test",
+                                "AnswerType" : "Result",
+                                "Description" : "It is a test used to compare 1 group, with 3 or more measures that must be continous and parametric. It´s non parametric test is the Friedman Test.",
+                                "Links": ["https://www.youtube.com/embed/6T6dvrwDe_U"]},
+                            {
+                                "Title" : "Friedman",
+                                "AnswerType" : "Result",
+                                "Description" : "It is a test used to compare 1 group, with 3 or more measures that must be numerical and non-parametric. It´s parametric test is the Repeated measured",
+                                "Links": ["https://www.youtube.com/embed/H-oiQ3f4ouM&amp=&t=177s"]
+                            }
+                        ]
+                    }
+                }
+            },
+            "Option2" : {
+                "id" : 10,
+                "Title" : "How many groups do you have?",
+                "Options" : ["2", "3 or more"],
+                "Description" : "",
+                "Option1" : {
+                    "id" : 101,
+                    "Title" : "Are your variables",
+                    "Options" : ["Categorical", "Continous"],
+                    "Description" : "",
+                    "Option1" : {
+                        "id" : -1,
+                        "Results" : [
+                            {
+                                "Title" : "Fisher's Test or Chi squared Test",
+                                "AnswerType" : "Result",
+                                "Description" : "It is a test used to compare proportions or percentages (qualitative variables) between 2 groups. When you perform a contingency table with 2 columns and 2 rows it is adequate to select the p value in the Fisher Test row. The Fisher´s exact Test is a statistical significance test that can calculate the significance of the deviation of the null hypothesis exactly, rather than relying on approximation.",
+                                "Links": ["https://www.youtube.com/embed/z2MEYHnSNnY&amp;list=PLrzstxkdbVcnoV-2J6M29Z8tgx_M6TcVD&amp;index=10"]
+                            }
+                        ]
+                    },
+                    "Option2" : {
+                        "id" : -1,
+                        "Results" : [
+                            {
+                                "Title" : "Student T Test - related samples",
+                                "AnswerType" : "Result",
+                                "Description" : "It is a test used when you compare the measures of the same group 2 times and its measures are parametric continous variables. It´s non parametric counterpart is the Wilcoxon-ranked Test.",
+                                "Links": ["https://www.youtube.com/embed/DzitbJHIBQM"]},
+                            {
+                                "Title" : "U-Mann Whitney Test",
+                                "AnswerType" : "Result",
+                                "Description" : "It is a test used to compare 2 groups with different measures and analyze if it´s averages are significantly different between each other. It must be used ins nonparametric numerical Variables. It´s parametric counterpart is the T-student test.",
+                                "Links": ["https://www.youtube.com/embed/njFz4QmgrWU"]
+                            }
+                        ]
+                    }
+                },
+                "Option2" : {
+                    "id" : 100,
+                    "Title" : "Are your variables",
+                    "Options" : ["Categorical", "Continous"],
+                    "Description" : "",
+                    "Option1" : {
+                        "id" : -1,
+                        "Results" : [
+                            {
+                                "Title" : " Pearson Chi squared Test",
+                                "AnswerType" : "Result",
+                                "Description" : "The pearson correlation coefficient is a test that measures the statistical relationship, or association between 2 parametric variables. It does not explains cause and effect, only the amount of association existing between the 2 variables. It´s non parametric counterpart is Spearman correlation.",
+                                "Links": ["https://www.youtube.com/embed/VOI5IlHfZVE"]
+                            }
+                        ]
+                    },
+                    "Option2" : {
+                        "id" : -1,
+                        "Results" : [
+                            {
+                                "Title" : "One-Way ANOVA Test",
+                                "AnswerType" : "Result",
+                                "Description" : "It is a test used to compare 3 or more independent groups, their measures must be continous and parametric. It´s non parametric counterpart is the Kruskall-Wallis Test.",
+                                "Links": ["https://www.youtube.com/embed/jYn5Jv7Gh4s"]},
+                            {
+                                "Title" : "Kruskal Wallis Test",
+                                "AnswerType" : "Result",
+                                "Description" : "It is a test used to compare 3 or more independent groups, their measures must be numerical and non-parametric. It´s parametric counterpart is the One-Factor ANOVA.",
+                                "Links": ["https://www.youtube.com/embed/GK2PKB_veQc"]
+                            }
+                        ]
                     }
                 }
             }
-        }
+        }      
 }

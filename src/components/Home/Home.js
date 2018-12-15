@@ -30,10 +30,10 @@ class Home extends Component {
     return (
       <div>
         <div class="MainContent">
-            <h1 style={{margin:'-0.5%'}}>WhichStat</h1>
+            <h1>WhichStat</h1>
             <p> Which Stat is an application designed to help you choose the best Statistical Test for your project. <br/>Answer the following questions with the options that best describe your study.</p>
             <Link to='/questions' style={{ textDecoration: 'none' }} >
-              <Button style={{ textDecoration: 'none' }} variant="contained" id="WhiteButton" onClick={this.handleClick}> Start </Button>
+              <Button style={{ textDecoration: 'none', fontSize:'14px'}} variant="contained" id="WhiteButton" onClick={this.handleClick}> Start </Button>
             </Link>
         </div>
       </div>
